@@ -1,0 +1,107 @@
+// COLOR VARIABLES
+$color-grey: #e0daed;
+$color-white: #fff;
+$color-black: #000;
+
+$color-dark-purple: #4b4453;
+$color-yellow: #ffd32a;
+$color-yellow-lighter:#FFDF62;
+$color-white: #fff;
+
+
+$smb-2: 2rem;
+$vlmb-8: 8rem;
+$box-radius: 2rem;
+
+
+
+// FONT VARIABLES
+
+$font-primary: 'Roboto',
+sans-serif;
+$font-secondary: 'Sans-serif';
+$font-tertiary: 'Verdana';
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 60%;
+}
+
+@media only screen and (max-width: $bp-large) {
+  font-size: 50%;
+}
+
+@media only screen and (max-width: $bp-medium) {
+  font-size: 47%;
+
+}
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40%;
+}
+
+
+
+
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #33313b;
+  overflow-x: hidden;
+
+  background: rgb(86, 87, 87);
+  background: -moz-radial-gradient(circle, rgba(86, 87, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(86, 87, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: radial-gradient(circle, rgba(86, 87, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#565757", endColorstr="#000000", GradientType=1);
+
+
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 3rem;
+       
+        
+    }
+}
+
+
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(6rem, 1fr));
+  grid-template-rows: 100vh repeat(4, min-content) 1fr;
+
+  
+
+}
+
+
+
+
+

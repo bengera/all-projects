@@ -1,0 +1,137 @@
+.header {
+
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+
+    &__subtext {
+        color: $color-grey;
+        font-size: 3.6rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+    }
+
+    &__logo {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $color-grey;
+        padding: 1rem;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.header__content {
+    
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    width: 50%;
+    grid-row: 2/ 3;
+    grid-column: 2 / 3;
+
+}
+
+
+.nav {
+
+    grid-column: 3 / 5;
+    grid-row-start: 1;
+    margin-top: 1.5rem;
+
+   
+
+
+    &__item {
+        display: inline-block;
+        font-size: 1.4rem;
+
+       
+
+
+    }
+
+    &__link {
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 3rem;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-grey;
+            text-transform: uppercase;
+        }
+
+
+        &:hover {
+            color: $color-white;
+        }
+
+    }
+
+
+}
+
+.user-nav {
+    display: flex;
+    justify-content: flex-start;
+
+    grid-column: 5 / 6;
+    margin-top: 2rem;
+
+
+    &>* {
+        padding: 0 2rem;
+        cursor: pointer;
+
+
+    }
+
+
+    &__icon {
+        fill: $color-grey;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &__icon:hover {
+        fill: $color-white;
+
+    }
+
+
+}

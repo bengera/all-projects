@@ -1,0 +1,70 @@
+.skills {
+
+    grid-column: 1 / -1;
+    grid-row-start: 5;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 5rem;
+    background: rgb(255, 211, 42);
+    background: rgb(255, 211, 42);
+    background: -moz-radial-gradient(circle, rgba(255, 211, 42, 1) 0%, rgba(255, 219, 78, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255, 211, 42, 1) 0%, rgba(255, 219, 78, 1) 100%);
+    background: radial-gradient(circle, rgba(255, 211, 42, 1) 0%, rgba(255, 219, 78, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd32a", endColorstr="#ffdb4e", GradientType=1);
+
+    
+
+
+    &__container {
+        padding: 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+        }
+
+    }
+
+    &__header {
+        color: $color-dark-purple;
+        font-family: $font-primary;
+        font-size: 5rem;
+        font-weight: 900;
+        margin-bottom: $smb-2;
+
+    }
+
+    &__text {
+
+
+        
+        font-family: $font-primary;
+        margin-bottom: 4rem;
+        font-weight: 400;
+
+       
+    }
+
+    &__list {
+
+
+        
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-dark-purple;
+        list-style: square;
+    }
+
+    &__list-items {}
+
+
+}
+
+.skills-profile {
+    width:100%;
+    height: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+        display:none;
+    }
+}

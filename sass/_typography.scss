@@ -1,0 +1,40 @@
+.title {
+    font-size: 10rem;
+    font-weight: bold;
+    color: $color-white;
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+
+    &__text {
+        font-size: 12rem;
+        line-height: 12rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size:9rem;
+            
+        }
+    }
+
+    
+
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
