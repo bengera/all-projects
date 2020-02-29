@@ -13,6 +13,8 @@
 
 
 
+
+
     <title>Portfolio 3.0</title>
 </head>
 
@@ -28,16 +30,19 @@
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-            <label for="navi-toggle" class="navigation__button">MENU</label>
+            <label for="navi-toggle" class="navigation__button">
+              <span class="navigation__icon">&nbsp;</span>
+
+            </label>
 
             <div class="navigation__background">&nbsp;</div>
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">Work</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">about</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">skills</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+                    <li class="navigation__item"><a href="#work" class="navigation__link">Work</a></li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link">about</a></li>
+                    <li class="navigation__item"><a href="#skills" class="navigation__link">skills</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">contact</a></li>
                 </ul>
             </nav>
 
@@ -72,11 +77,11 @@
         </div>
 
 
-        <ul class="nav">
-            <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        <ul class="nav js--main-nav">
+            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
 
         <div class="header__content">
@@ -96,7 +101,7 @@
         </div>
     </header>
 
-    <div class="gallery-header-container">
+    <div class="gallery-header-container" id="work">
         <h2 class="gallery__header">
             My most recent projects
         </h2>
@@ -171,7 +176,7 @@
 
 
     <!-- <a href="https://www.w3schools.com"> <img src="/w3images/underwater.jpg" style="width:100%">-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__container">
             <h3 class="about__header">
                 What I'm all about
@@ -194,7 +199,8 @@
                     What I do
                 </h4>
                 <p class="about__text-2">
-                    I enjoy making websites.
+                    My name is Ben Geraghty. I am a 31 year old freelance Front End Developer living in Vietnam. 
+                    I graduated from university in 2012 with a bachelors degree in multimedia technology and design.
 
                 </p>
 
@@ -206,7 +212,7 @@
 
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills__container">
 
 
@@ -242,7 +248,7 @@
 
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__container">
             <div class="contact__box">
                 <h3 class="contact__header">
@@ -277,13 +283,15 @@
     </section>
 
     <footer class="footer">
+        
         <p class="footer__text">
             © 2020 by Ben Geraghty. All rights reserved.
         </p>
+    
     </footer>
 
 
-
+<script src="/js/script.js"></script>
 
 
 

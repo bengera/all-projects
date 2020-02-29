@@ -28,8 +28,7 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#565757",endColorstr="#000000",GradientType=1);  
         
         @media only screen and (max-width: $bp-medium) {
-            grid-template-columns: 1fr;
-            grid-gap: 1rem;
+            grid-template-columns: auto;
         }
 
 }
